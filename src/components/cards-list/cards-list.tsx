@@ -13,7 +13,7 @@ export const CardsList = () => {
   return (
     <div className="flex flex-wrap gap-[48px] px-[62px]">
       {data &&
-        data.map((cat) => {
+        data.map((cat: TCatImage) => {
           return (
             <CatCardUI cat={cat} key={cat.id} onClick={() => handleAddFavorites(cat)} />
           );
